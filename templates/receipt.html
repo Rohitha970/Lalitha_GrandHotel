@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="card luxury-card p-4">
+  <div class="d-flex align-items-center mb-3">
+    <img src="{{ url_for('static', filename='images/logo.png') }}" height="64" class="me-3">
+    <div>
+      <h3 class="brand-title mb-0">Lalitha Grand Hotel</h3>
+      <small class="text-muted">Combined Receipt</small>
+    </div>
+  </div>
+
+  <p><strong>Booking ID:</strong> {{ booking.id }}</p>
+  <p><strong>Date:</strong> {{ booking.date }}</p>
+  <p><strong>Room:</strong> {{ booking.room_type }} — {{ booking.room_number }}</p>
+
+  <p><strong>Food Items:</strong></p>
+  <ul>
+    {% for f in booking.food_items %}
+      <li>{{ f }}</li>
+    {% endfor %}
+  </ul>
+
+  <p><strong>Assigned Staff:</strong> {{ booking.staff | join(', ') }}</p>
+  <p><strong>Special Request:</strong> {{ booking.special }}</p>
+  <h4>Total: ₹{{ booking.total_price }}</h4>
+
+  <div class="mt-3">
+    <button class="btn btn-gold me-2" id="downloadBtn">Download & Print</button>
+    <a class="btn btn-outline-light" href="{{ url_for('customer_dashboard') }}">Back</a>
+  </div>
+</div>
+
+<script>
+document.getElementById("downloadBtn").addEventListener("click", async () => {
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({ unit: 'pt', format: 'a4' });
+  await doc.html(document.querySelector(".card.luxury-card"), {
+    callback: function (d) { d.save("Lalitha_Receipt_{{ booking.id }}.pdf"); },
+    x: 20, y: 20, html2canvas: { scale: 1.2 }
+  });
+});
+</script>
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+<!-- SPA initial content placeholder: JS will render sections -->
+<div id="spaRoot" class="row">
+  <div class="col-12">
+    <!-- top CTA -->
+    <div class="hero luxury-card p-4 mb-4 d-flex align-items-center justify-content-between">
+      <div>
+        <h2 class="brand-title mb-1">Lalitha Grand Hotel</h2>
+        <p class="mb-0 text-muted">Book rooms, order food, assign staff — all in one luxury dashboard.</p>
+      </div>
+      <div>
+        <button class="btn btn-outline-gold me-2" onclick="renderSection('rooms')">Rooms</button>
+        <button class="btn btn-outline-gold" onclick="renderSection('food')">Food</button>
+      </div>
+    </div>
+
+    <!-- Dynamic content area -->
+  
+
+  </div>
+</div>
+
+
+{% endblock %}

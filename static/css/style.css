@@ -1,0 +1,374 @@
+/* ===============================
+   GENERAL & BODY
+   =============================== */
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #121212;
+    color: #fff;
+}
+
+h2, h3, h4, h5 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* ===============================
+   COLORS
+   =============================== */
+.text-gold {
+    color: #FFD700 !important;
+}
+
+.border-gold {
+    border-color: #FFD700 !important;
+}
+
+.btn-outline-gold {
+    color: #FFD700;
+    border-color: #FFD700;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-gold:hover {
+    background-color: #FFD700;
+    color: #121212;
+    border-color: #FFD700;
+}
+
+.text-muted {
+    color: #bbbbbb !important;
+}
+
+/* ===============================
+   APP SHELL
+   =============================== */
+.app-shell {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* ===============================
+   SIDEBAR
+   =============================== */
+.sidebar {
+    width: 220px;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar .logo {
+    height: 50px;
+    object-fit: contain;
+}
+
+.sidebar .brand-title {
+    font-weight: 700;
+    color: #FFD700;
+    font-size: 1.2rem;
+}
+
+.sidebar .brand-sub {
+    font-size: 0.8rem;
+    color: #ccc;
+}
+
+.sidebar .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    transition: 0.2s;
+}
+
+.sidebar .nav-link:hover, 
+.sidebar .nav-link.active {
+    background-color: #333;
+    color: #FFD700;
+    border-radius: 5px;
+}
+
+.sidebar-bottom {
+    font-size: 0.75rem;
+    color: #aaa;
+}
+
+/* ===============================
+   MAIN CONTENT
+   =============================== */
+.main-content {
+    flex: 1;
+    background-color: #121212;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #1a1a1a;
+    color: #FFD700;
+    border-bottom: 1px solid #333;
+}
+
+.content-area {
+    flex: 1;
+}
+
+/* ===============================
+   CARDS
+   =============================== */
+.card {
+    background-color: #1e1e1e;
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.3);
+}
+
+.card h5, .card h6 {
+    color: #FFD700;
+}
+
+.card p {
+    color: #ccc;
+}
+
+/* ===============================
+   ROOM & FOOD CARDS
+   =============================== */
+.room-card, .food-card, .staff-card {
+    text-align: center;
+}
+
+.room-card img, .food-card img, .staff-card img {
+    border-radius: 8px;
+}
+
+/* ===============================
+   FOOD LIST HORIZONTAL
+   =============================== */
+#foodList li {
+    background-color: #1a1a1a;
+    padding: 8px 12px;
+    margin: 3px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+/* ===============================
+   MODAL
+   =============================== */
+.modal-backdrop {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1040;
+}
+
+.modal-content {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+.btn-close-white {
+    filter: invert(1);
+}
+
+/* ===============================
+   RECEIPT CARD
+   =============================== */
+#contentArea .card.text-center {
+    border: 1px solid #FFD700;
+}
+
+#contentArea .card.text-center img {
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+#contentArea .card.text-center hr {
+    border-color: #FFD700;
+}
+
+/* ===============================
+   BUTTONS
+   =============================== */
+.btn-success {
+    background-color: #FFD700;
+    border: none;
+    color: #121212;
+    font-weight: 600;
+}
+
+.btn-success:hover {
+    background-color: #e6c200;
+}
+
+/* ===============================
+   RESPONSIVE GRID
+   =============================== */
+@media (max-width: 1200px){
+    .sidebar { width: 200px; }
+    .card { width: 160px !important; }
+}
+
+@media (max-width: 768px){
+    .app-shell { flex-direction: column; }
+    .sidebar { width: 100%; flex-direction: row; overflow-x: auto; }
+    .main-content { flex: 1; }
+}
+
+/* ===============================
+   MISC
+   =============================== */
+.text-center { text-align: center; }
+.mb-3 { margin-bottom: 1rem !important; }
+.mb-4 { margin-bottom: 1.25rem !important; }
+.mt-2 { margin-top: 0.5rem !important; }
+.mt-3 { margin-top: 1rem !important; }
+.mt-4 { margin-top: 1.25rem !important; }
+.p-2 { padding: 0.5rem !important; }
+.p-3 { padding: 1rem !important; }
+.p-4 { padding: 1.5rem !important; }
+.gap-2 { gap: 0.5rem !important; }
+.gap-3 { gap: 1rem !important; }
+.gap-4 { gap: 1.5rem !important; }
+/* =============================== */
+/* ULTRA PREMIUM ABOUT + FACILITIES */
+/* =============================== */
+
+ /* Background gradient (Fix for dark screen issue) */
+        .about-master {
+            position: relative;
+            padding: 40px;
+            z-index: 2;
+            background: linear-gradient(135deg, #1a1a1a, #2a2a2a, #1f1f1f);
+            border-radius: 14px;
+            box-shadow: 0 0 25px rgba(0,0,0,0.6);
+            color: white;
+        }
+
+        .particles {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .particle {
+            position: absolute;
+            background: gold;
+            border-radius: 50%;
+            width: 6px;
+            height: 6px;
+            animation: floatUp 9s infinite linear;
+            opacity: 0.7;
+        }
+
+        @keyframes floatUp {
+            0% { transform: translateY(40vh) scale(0.4); opacity: 0; }
+            40% { opacity: 1; }
+            100% { transform: translateY(-20vh) scale(1); opacity: 0; }
+        }
+
+        .parallax-layer { transition: transform .2s ease-out; }
+
+        @keyframes fadeUP {
+            0% { opacity:0; transform:translateY(30px); }
+            100% { opacity:1; transform:translateY(0); }
+        }
+
+        /* LOGO + WELCOME */
+        .about-top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 35px;
+            flex-wrap: wrap;
+            animation: fadeUP 1s ease-out;
+
+        }
+
+        .about-logo img {
+            height: 170px;
+            filter: drop-shadow(0 0 10px gold);
+        }
+
+        .welcome-box h2 {
+            color: gold;
+            font-size: 2.4rem;
+            text-shadow: 0 0 12px rgba(255,215,0,0.4);
+            text-align: center;
+        }
+
+        /* ABOUT CARD */
+        .about-card {
+            display: flex;
+            background: rgba(255,255,255,0.05);
+            padding: 18px;
+            border-radius: 12px;
+            margin-top: 20px;
+            color: #f5f5f5;
+            animation: fadeUP 1.2s ease-out;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        }
+
+        /* FACILITIES */
+        .highlight-box {
+            background: rgba(255,255,255,0.07);
+            padding: 25px;
+            border-radius: 14px;
+            margin-top: 28px;
+            box-shadow: 0 0 18px rgba(0,0,0,0.4);
+        }
+
+        .highlight-box h4 {
+            color: gold;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .highlight-box ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .highlight-box li {
+            opacity: 0;
+            transform: translateY(20px);
+            padding: 10px 0;
+            font-size: 1.2rem;
+            font-weight: 500;
+            color: #f1f1f1;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            transition: 0.6s ease-out;
+            text-align: center;
+        }
+            /* FACILITIES */
+        .highlight-box li.slide-left 
+        { opacity: 0; 
+            transform: translateX(-50px); 
+            transition: all 0.6s ease-out;
+         }
+         /* Slide from right */
+          .highlight-box li.slide-right
+           { opacity: 0;
+             transform: translateX(50px); 
+             transition: all 0.6s ease-out;
+             } 
+          /* Show state */ 
+          .highlight-box li.show-left,
+          .highlight-box li.show-right 
+          { opacity: 1; 
+            transform: translateX(0); 
+        } 
+        .center-text {
+    text-align: center; /* centers only this paragraph */
+            /* optional color */
+}

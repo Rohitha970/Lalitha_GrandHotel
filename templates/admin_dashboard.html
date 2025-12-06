@@ -1,0 +1,65 @@
+{% extends "layout.html" %}
+{% block content %}
+<h3 class="brand-title mb-3">Admin Dashboard</h3>
+<div class="row">
+  <div class="col-lg-8">
+    <div class="card luxury-card p-3 mb-3">
+      <h5>Rooms overview</h5>
+      <div class="table-responsive mt-2">
+        <table class="table table-borderless">
+          <thead>
+            <tr><th>Type</th><th>Number</th><th>Price</th><th>Facilities</th><th>Available</th></tr>
+          </thead>
+          <tbody>
+            {% for type, list in rooms.items() %}
+              {% for r in list %}
+              <tr>
+                <td>{{ type }}</td>
+                <td>{{ r.number }}</td>
+                <td>₹{{ r.price }}</td>
+                <td>{{ r.facilities | join(', ') }}</td>
+                <td>{% if r.available %}Yes{% else %}No{% endif %}</td>
+              </tr>
+              {% endfor %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="card luxury-card p-3">
+      <h5>Bookings</h5>
+      <table class="table">
+        <thead><tr><th>ID</th><th>Room</th><th>Food</th><th>Staff</th><th>Total</th><th>Date</th></tr></thead>
+        <tbody>
+          {% for b in bookings %}
+          <tr>
+            <td>{{ b.id }}</td>
+            <td>{{ b.room_type }} - {{ b.room_number }}</td>
+            <td>
+              {% for f in b.food_items %}
+                <div>{{ f }}</div>
+              {% endfor %}
+            </td>
+            <td>{{ b.staff | join(', ') }}</td>
+            <td>₹{{ b.total_price }}</td>
+            <td>{{ b.date }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="col-lg-4">
+    <div class="card luxury-card p-3">
+      <h5>Staff</h5>
+      <ul class="list-unstyled mt-2">
+        {% for s in staff %}
+        <li class="mb-2"><strong>{{ s.name }}</strong> — <small class="text-muted">{{ s.role }}</small></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="d-flex justify-content-center align-items-center" style="min-height:60vh">
+  <div class="card luxury-card p-4" style="max-width:520px;width:100%">
+    <h3 class="brand-title mb-1">Welcome to Lalitha Grand</h3>
+    <p class="text-muted">Choose role to enter dashboard</p>
+    <form method="POST" action="/">
+      <div class="mb-3">
+        <select class="form-select form-select-lg" name="user_type" required>
+          <option value="">-- Select Role --</option>
+          <option value="Customer">Customer</option>
+          <option value="Admin">Admin</option>
+        </select>
+      </div>
+      <div class="d-grid">
+        <button class="btn btn-gold btn-lg">Proceed</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

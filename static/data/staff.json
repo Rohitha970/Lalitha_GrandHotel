@@ -1,0 +1,12 @@
+[
+  {"name":"John Doe","role":"Manager","experience":5,"charge":2000,"image":"1.jpg"},
+  {"name":"Jane Smith","role":"Chef","experience":7,"charge":1800,"image":"2.jpg"},
+  {"name":"Mike Lee","role":"Receptionist","experience":3,"charge":1500,"image":"3.jpg"},
+  {"name":"Sara Khan","role":"Housekeeping","experience":4,"charge":1200,"image":"4.jpg"},
+  {"name":"Raj Patel","role":"Security","experience":6,"charge":1000,"image":"5.jpg"},
+  {"name":"Anita Verma","role":"Concierge","experience":5,"charge":1600,"image":"6.jpg"},
+  {"name":"Vikram Singh","role":"Chef","experience":8,"charge":2000,"image":"7.jpg"},
+  {"name":"Priya Rao","role":"Housekeeping","experience":4,"charge":1200,"image":"8.jpg"},
+  {"name":"Arjun Nair","role":"Front Desk","experience":3,"charge":1500,"image":"9.jpg"},
+  {"name":"Meera Joshi","role":"Spa Therapist","experience":6,"charge":1800,"image":"10.jpg"}
+]

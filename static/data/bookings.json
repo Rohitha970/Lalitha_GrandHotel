@@ -1,0 +1,53 @@
+{
+  "bookings": [
+    {
+      "booking_id": "BKG001",
+      "customer_name": "Arjun Kumar",
+      "room_type": "Single",
+      "room_number": 101,
+      "price": 1200,
+      "facilities": ["Free Wi-Fi", "24/7 Room Service", "Air Conditioning"],
+      "staff_assigned": "Rahul",
+      "food_order": [
+        { "category": "North Indian", "item": "Paneer Butter Masala", "quantity": 1, "price": 180 },
+        { "category": "South Indian", "item": "Masala Dosa", "quantity": 2, "price": 70 }
+      ],
+      "total_amount": 1520,
+      "payment_status": "Paid",
+      "date": "2025-12-03"
+    },
+
+    {
+      "booking_id": "BKG002",
+      "customer_name": "Neha Sharma",
+      "room_type": "Deluxe",
+      "room_number": 204,
+      "price": 2600,
+      "facilities": ["Pool Access", "Breakfast Included", "Free Wi-Fi"],
+      "staff_assigned": "Priya",
+      "food_order": [
+        { "category": "North Indian", "item": "Chole Bhature", "quantity": 1, "price": 90 }
+      ],
+      "total_amount": 2690,
+      "payment_status": "Paid",
+      "date": "2025-12-03"
+    },
+
+    {
+      "booking_id": "BKG003",
+      "customer_name": "Rohith Raj",
+      "room_type": "Suite",
+      "room_number": 301,
+      "price": 4200,
+      "facilities": ["Luxury Sofa", "Mini Bar", "Pool Access", "Free Wi-Fi"],
+      "staff_assigned": "Kiran",
+      "food_order": [
+        { "category": "South Indian", "item": "Idli", "quantity": 3, "price": 50 },
+        { "category": "South Indian", "item": "Meals", "quantity": 1, "price": 160 }
+      ],
+      "total_amount": 4560,
+      "payment_status": "Pending",
+      "date": "2025-12-04"
+    }
+  ]
+}

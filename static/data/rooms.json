@@ -1,0 +1,50 @@
+{
+  "Single": [
+    {"number":"S101","price":1000,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"S102","price":1200,"facilities":["AC","TV","WiFi"],"available":true},
+    {"number":"S103","price":1500,"facilities":["AC","TV","WiFi"],"available":true},
+    {"number":"S104","price":1800,"facilities":["AC","TV","WiFi"],"available":true},
+    {"number":"S105","price":1500,"facilities":["AC","TV","MiniFridge"],"available":true},
+    {"number":"S106","price":1900,"facilities":["AC","TV","WiFi"],"available":true},
+    {"number":"S107","price":1550,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"S108","price":1600,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"S109","price":1500,"facilities":["AC","TV","WiFi"],"available":true},
+    {"number":"S110","price":1900,"facilities":["AC","TV","MiniFridge"],"available":true}
+  ],
+  "Double": [
+    {"number":"D201","price":2000,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"D202","price":2700,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"D203","price":2500,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"D204","price":2400,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"D205","price":2900,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"D206","price":2600,"facilities":["AC","TV","WiFi","Balcony"],"available":true},
+    {"number":"D207","price":2500,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"D208","price":2800,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"D209","price":2500,"facilities":["AC","TV","WiFi","MiniFridge"],"available":true},
+    {"number":"D210","price":2600,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true}
+  ],
+  "Deluxe": [
+    {"number":"DL301","price":4500,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL302","price":4000,"facilities":["AC","TV","WiFi","Balcony"],"available":true},
+    {"number":"DL303","price":4700,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL304","price":4600,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL305","price":4000,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL306","price":4550,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL307","price":4800,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL308","price":4000,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL309","price":4500,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"DL310","price":4000,"facilities":["AC","TV","WiFi","Balcony"],"available":true}
+  ],
+  "Suite": [
+    {"number":"SU401","price":6000,"facilities":["AC","TV","WiFi","MiniFridge","Jacuzzi"],"available":true},
+    {"number":"SU402","price":6200,"facilities":["AC","TV","WiFi","MiniFridge","Balcony","Jacuzzi"],"available":true},
+    {"number":"SU403","price":6000,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"SU404","price":6500,"facilities":["AC","TV","WiFi","MiniFridge","Balcony","Jacuzzi"],"available":true},
+    {"number":"SU405","price":6000,"facilities":["AC","TV","WiFi","MiniFridge","Balcony"],"available":true},
+    {"number":"SU406","price":6800,"facilities":["AC","WiFi","MiniFridge","Balcony","Jacuzzi"],"available":true},
+    {"number":"SU407","price":6000,"facilities":["AC","TV","WiFi","MiniFridge","Balcony","Jacuzzi"],"available":true},
+    {"number":"SU408","price":6400,"facilities":["AC","TV","WiFi","MiniFridge","Balcony","Jacuzzi"],"available":true},
+    {"number":"SU409","price":6900,"facilities":["AC","TV","WiFi","MiniFridge","Balcony","Jacuzzi"],"available":true},
+    {"number":"SU410","price":6000,"facilities":["AC","TV","WiFi","Balcony","Jacuzzi"],"available":true}
+  ]
+}
