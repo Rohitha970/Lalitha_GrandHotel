@@ -191,7 +191,7 @@ function renderFoodItems(meal) {
     let html = `<h4 class="text-gold mb-3 text-center">${meal} Items</h4><div class="d-flex flex-wrap gap-3 justify-content-center">`;
     items.forEach(item => {
         html += `<div class="card p-2 shadow-sm bg-dark text-white" style="width:150px; text-align:center;">
-            <img src="/static/images/food/${window.APP.currentFoodCuisine}/${item.image}" class="card-img-top mb-1" style="height:100px; object-fit:cover;">
+            <img src="${item.image}" class="card-img-top mb-1" style="height:100px; object-fit:cover;">
             <h6>${item.name}</h6>
             <p class="text-muted mb-1">₹${item.price}</p>
             <button class="btn btn-outline-gold btn-sm w-100" onclick="addFood('${item.name}',${item.price})">Add</button>
@@ -200,6 +200,7 @@ function renderFoodItems(meal) {
     html += `</div>`;
     container.innerHTML = html;
 }
+
 
 function addFood(name,price){
     window.APP.currentFood.push({name,price});
